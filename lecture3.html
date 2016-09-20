@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lecture 3 || Bootstrap Dropdown</title>
+        <link href="dist/bootstrap-3.0.3/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="dist/bootstrap-3.0.3/css/bootstrap-theme.min.css" rel="stylesheet" />
+        <style type="text/css">
+            .dropdown-menu>li>a {
+                display: block;
+                padding: 3px 20px;
+                clear: both;
+                font-weight: normal;
+                line-height: 1.428571429;
+                color: #B53C3C;
+                white-space: nowrap;
+                background-color: blanchedalmond;
+                padding: 10px;
+            }
+            li {
+                /* padding: 10px; */
+                margin-top: 1px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="jumbotron">
+            <h1>Our Bootstrap Site</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore .</p>
+        </div>
+
+        <!-- Navigation bar-->
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                    </button>
+                    <a href="#" class="navbar-brand">Site Title</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="myNavbar">
+
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Page</a></li>
+                        <li><a href="#">Category</a></li>
+                        <li><a href="#">Links</a></li>
+                        <li><a href="#">Contacts</a></li>
+
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tutorials
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Page</a></li>
+                                <li><a href="#">Category</a></li>
+                                <li><a href="#">Links</a></li>
+                                <li><a href="#">Page</a></li>
+                                <li><a href="#">Category</a></li>
+                                <li><a href="#">Links</a></li>
+                                <li><a href="#">Page</a></li>
+                                <li><a href="#">Category</a></li>
+                                <li><a href="#">Links</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Sign Up</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Admin Panel
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Page</a></li>
+                                <li><a href="#">Category</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- Navigation bar-->
+
+
+
+
+        <!-- Jquery and Bootstrap Script files -->
+        <script src="dist/jquery-2.0.3.min.js"></script>
+        <script src="dist/bootstrap-3.0.3/js/bootstrap.min.js"></script>
+    </body>
+</html>
